@@ -1,6 +1,8 @@
 # Mpi_Distribute
 
-Linux Execution:
+Unix Execution:
+
+export OMPI_MCA_btl_vader_single_copy_mechanism=none     #for docker
 
 mpirun -np numberofprocesses ./point_distributing numberofpoints numberofdimensions datfile
 
